@@ -1,0 +1,161 @@
+/* Global Styles */
+
+body {
+    background-color: gray;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Mobile Styles */
+
+#container {
+    border: 4px solid;
+    color: white;
+}
+
+header {
+    background-image: url("../imgs/violin2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+nav li {
+    display: block;
+}
+
+nav li a {
+    display: block;
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 25px;
+    border: 4px solid;
+
+}
+
+nav li a:hover {
+    background-color: lightgrey;
+}
+
+main {
+    padding: 10px;
+    margin: 10px;
+}
+
+.main_content {
+    padding: 10px;
+}
+
+.col {
+    margin: 10px 0;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.info {
+    text-align: center;
+}
+
+/* Tablet Styles */
+
+@media (min-width: 768px) {
+    nav {
+        margin: 10px 0;
+        border-bottom: 4px solid;
+        color: lightgray;
+    }
+    
+    nav li {
+        display: inline;
+    }
+
+    nav li a {
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+    }
+
+    .col img {
+        width: 75%;
+    }
+}
+
+@media (min-width: 600px) {
+   .col img {
+        width: 60%;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    #container {
+        width: 65%;
+        margin: 20px auto;
+    }
+
+    .Page {
+        display: flex;
+    }
+
+    .col {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .col img {
+        width: 100%;
+    }
+
+    .multi_col {
+        display: flex;
+    }
+
+    section,
+    aside {
+        margin: 5px;
+        padding: 20px;
+        border-radius: 5px
+    }
+
+    section {
+        width: 95%;
+    }
+    
+    aside {
+        width: 20%;
+    }
+}
