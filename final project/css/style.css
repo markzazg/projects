@@ -1,0 +1,194 @@
+/* Global Styles */
+body {
+margin: 10px;
+background-color: #f0f5f1;
+font-family: "Lexend", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+h2 {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+background: #2f4f2f;
+color: white;
+padding: 20px;
+text-align: center;
+}
+nav ul {
+list-style: none;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+nav ul li {
+display: inline-block;
+margin: 0 10px;
+}
+nav ul li a {
+color: black;
+text-decoration: none;
+}
+.hero, .content {
+padding: 20px;
+text-align: center;
+}
+.hero img, .content img {
+max-width: 100%;
+border-radius: 10px;
+}
+.three-col {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+}
+@media (min-width: 768px) {
+nav ul li {
+margin: 0 20px;
+}
+
+/* Mobile Styles */
+
+#container {
+    color: black;
+    padding: 20px 0;
+}
+
+header {
+    background-image: url("../imgs/violin2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    text-align: center;
+}
+
+nav {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+}
+nav li {
+    margin: 6px 0;
+}
+
+nav li a {
+    display: block;
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav li a:hover {
+    background-color: lightgrey;
+}
+
+main {
+    padding: 10px;
+    margin: 10px;
+}
+
+.main_content {
+    padding: 10px;
+    margin: 10px;
+}
+
+.col {
+    margin: 10px 0;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.info {
+    text-align: center;
+}
+
+/* Tablet Styles */
+
+@media (min-width: 768px) {
+    nav {
+        margin: 10px 0;
+        border-bottom: 4px solid;
+        color: lightgray;
+    }
+    
+    nav li {
+        display: inline;
+    }
+
+    nav li a {
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+    }
+
+    .col img {
+        width: 40%;
+    }
+}
+
+@media (min-width: 600px) {
+   .col img {
+        width: 60%;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    #container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .col {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .col img {
+        width: 85%;
+    }
+
+    .multi_col {
+        display: flex;
+    }
+
+    section,
+    aside {
+        margin: 5px;
+        padding: 20px;
+        border-radius: 5px
+    }
+
+    section {
+        width: 95%;
+    }
+    
+    aside {
+        width: 20%;
+    }
+}
